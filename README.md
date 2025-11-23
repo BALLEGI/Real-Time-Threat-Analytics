@@ -99,7 +99,7 @@ L'infrastructure est orchestrée via **Docker Compose**.
 ### 🛠️ Étapes
 #### 1) Cloner le projet
 ```bash
-git clone https://github.com/BALLEGI/realtime-fraud-detection1
+git clone [https://github.com/BALLEGI/Real-Time-Threat-Analytics](https://github.com/BALLEGI/Real-Time-Threat-Analytics)
 cd realtime-fraud-detection1
 ```
 
