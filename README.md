@@ -5,7 +5,7 @@
 
 ---
 
-## 🗂️ Table des matières
+##  Table des matières
 - [Présentation](#présentation)
 - [Architecture](#architecture)
 - [Fonctionnalités clés](#fonctionnalités-clés)
@@ -89,14 +89,14 @@ L'infrastructure est orchestrée via **Docker Compose**.
 - Spark UI : http://localhost:8080
 
 ---
-## 🚀 Installation et Mise en Place
+##  Installation et Mise en Place
 
-### ✅ Prérequis
+###  Prérequis
 - Docker Desktop
 - Git
 - Windows PowerShell
 
-### 🛠️ Étapes
+###  Étapes
 #### 1) Cloner le projet
 ```bash
 git clone https://github.com/BALLEGI/Real-Time-Threat-Analytics
@@ -107,7 +107,7 @@ cd Real-Time-Threat-Analytics
 ```bash
 docker-compose up -d
 ```
-⏳ Attendre ~60s pour l'initialisation complète.
+ Attendre ~60s pour l'initialisation complète.
 
 #### 3) Configurer Elasticsearch
 Accédez à Kibana : [http://localhost:5601](http://localhost:5601)
@@ -162,15 +162,15 @@ docker exec kafka kafka-topics --create --topic fraud_alerts --bootstrap-server 
 
 ---
 
-## 🎮 Utilisation
+##  Utilisation
 
-### ▶️ Lancer le moteur de détection
+###  Lancer le moteur de détection
 ```powershell
 start-detection.bat
 ```
-✅ Attendez le message : `Pipeline Unifié Actif. Écriture vers 'security_events'...`
+ Attendez le message : `Pipeline Unifié Actif. Écriture vers 'security_events'...`
 
-### 🧪 Simuler des attaques
+###  Simuler des attaques
 - **Fenêtre 1 : Fraude bancaire**
 ```powershell
 .\generate-carding-attack.ps1
@@ -184,7 +184,7 @@ start-detection.bat
 .\generate-attack.ps1
 ```
 
-### 🔍 Observer en temps réel
+###  Observer en temps réel
 - Kibana → Dashboard **Unified Security Center**.
 - Période : `Today` ou `Last 1 hour`.
 ## Lancement du Job Spark
