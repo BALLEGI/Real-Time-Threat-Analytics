@@ -107,7 +107,7 @@ analyzed_df = raw_stream \
 enriched_df = analyzed_df.withColumn("is_known_threat", ti_check_udf(col("source_ip"), col("ua_extract")))
 
 # =============================================================================
-# 5. LOGIQUE DE DÉTECTION (CORRIGÉE)
+# 5. LOGIQUE DE DÉTECTION 
 # =============================================================================
 
 # Utilisation de parenthèses pour éviter les erreurs de syntaxe Python et
@@ -200,5 +200,6 @@ query = real_alerts \
     .option("es.nodes.wan.only", "true") \
     .option("checkpointLocation", "/tmp/checkpoint_ai_entropy_v3_fixed") \
     .start()
+
 
 query.awaitTermination()
